@@ -71,14 +71,13 @@ outline: none;
 				   ar-scale=""
 				   exposure="1"
 				  poster="Images/Poster.png" >
-				  	     <div class="btn-container">
+    </model-viewer>
+	     <div class="btn-container">
 		      <button type="button" onclick="Layer1()">Layer1</button>
 			  <button type="button" onclick="Layer2()">Layer2</button>
 			  <button type="button" onclick="Layer3()">Layer3</button>
 			  <button type="button" onclick="Layer4()">Layer4</button>
 			  <button type="button" onclick="Layer5()">Layer5</button>
-    </model-viewer>
-	    
 			      <section class="attribution">
       <h1> Human Eye </h1>
         </div>
@@ -97,9 +96,7 @@ outline: none;
   
   <script>
         (() => {
-          var modelViewer = document.getElementByID('moedl');
-              modelViewer.activateAR();
-			  function Layer1(){
+          var checkExist = setInterval (function Layer1(){
 			     modelViewer.animationName = 'Layer1';
 				 }
 				 function Layer2(){
@@ -114,6 +111,7 @@ outline: none;
 				 function Layer5(){
 				 modelViewer.animationName = 'Layer5';
 				 }
+           
 				 
            }
         }, 100);
