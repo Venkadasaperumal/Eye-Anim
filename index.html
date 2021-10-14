@@ -70,7 +70,7 @@ outline: none;
                    ar
 				   ar-scale=""
 				   exposure="1"
-				  poster="Images/Poster.png" animation-name="Layer5" autoplay ar>
+				  poster="Images/Poster.png" animation-ame="Layer5" autoplay ar>
     </model-viewer>
 	     <div class="btn-container">
 		      <button type="button" onclick="Layer1()">Layer1</button>
@@ -96,7 +96,8 @@ outline: none;
   
   <script>
         (() => {
-          var modelViewer = document.getElementByID ('model') (function Layer1(){
+          var modelViewer = document.getElementByID('model');
+		  (function Layer1(){
 			     modelViewer.animationName = 'Layer1';
 				 }
 				 function Layer2(){
@@ -114,7 +115,7 @@ outline: none;
            
 				 
            }
-        }, 100);
+        , 100);
         })();
     </script>
   
